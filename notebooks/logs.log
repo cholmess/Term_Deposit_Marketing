@@ -2846,3 +2846,81 @@
 2022-07-21 08:56:04,745:INFO:Checking exceptions
 2022-07-21 08:56:04,745:INFO:Preloading libraries
 2022-07-21 08:56:04,745:INFO:Preparing display monitor
+2022-07-21 10:10:02,177:INFO:Initializing create_model()
+2022-07-21 10:10:02,181:INFO:create_model(estimator=lightgbm, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, verbose=True, system=True, metrics=None, experiment_custom_tags=None, add_to_model_list=True, probability_threshold=None, display=None, return_train_score=False, kwargs={})
+2022-07-21 10:10:02,182:INFO:Checking exceptions
+2022-07-21 10:10:02,183:INFO:Preparing display monitor
+2022-07-21 10:10:02,259:INFO:Importing libraries
+2022-07-21 10:10:02,259:INFO:Copying training dataset
+2022-07-21 10:10:02,283:INFO:Defining folds
+2022-07-21 10:10:02,284:INFO:Declaring metric variables
+2022-07-21 10:10:02,318:INFO:Importing untrained model
+2022-07-21 10:10:02,353:INFO:Light Gradient Boosting Machine Imported succesfully
+2022-07-21 10:10:02,400:INFO:Starting cross validation
+2022-07-21 10:10:02,407:INFO:Cross validating with StratifiedKFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2022-07-21 10:10:12,815:INFO:Calculating mean and std
+2022-07-21 10:10:12,821:INFO:Creating metrics dataframe
+2022-07-21 10:10:12,852:INFO:Finalizing model
+2022-07-21 10:10:13,155:INFO:Uploading results into container
+2022-07-21 10:10:13,155:INFO:Uploading model into container now
+2022-07-21 10:10:13,191:INFO:create_model_container: 17
+2022-07-21 10:10:13,191:INFO:master_model_container: 17
+2022-07-21 10:10:13,191:INFO:display_container: 5
+2022-07-21 10:10:13,193:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, silent='warn',
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0)
+2022-07-21 10:10:13,195:INFO:create_model() succesfully completed......................................
+2022-07-21 10:10:20,390:INFO:Initializing plot_model()
+2022-07-21 10:10:20,391:INFO:plot_model(fold=None, use_train_data=False, verbose=True, is_in_evaluate=False, display=None, display_format=None, estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, silent='warn',
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0), feature_name=None, fit_kwargs=None, groups=None, label=False, plot=confusion_matrix, plot_kwargs=None, save=False, scale=1, system=True)
+2022-07-21 10:10:20,393:INFO:Checking exceptions
+2022-07-21 10:10:20,414:INFO:Preparing display monitor
+2022-07-21 10:10:20,439:INFO:Preloading libraries
+2022-07-21 10:10:20,486:INFO:Copying training dataset
+2022-07-21 10:10:20,493:INFO:Copying test dataset
+2022-07-21 10:10:20,507:INFO:Plot type: confusion_matrix
+2022-07-21 10:10:20,518:INFO:Initializing get_config()
+2022-07-21 10:10:20,518:INFO:get_config(variable=prep_pipe)
+2022-07-21 10:10:20,532:INFO:Global variable: prep_pipe returned as Pipeline(memory=None,
+         steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=[],
+                                      display_types=True, features_todrop=[],
+                                      id_columns=[],
+                                      ml_usecase='classification',
+                                      numerical_features=[], target='y',
+                                      time_features=[])),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='...
+                ('scaling', 'passthrough'), ('P_transform', 'passthrough'),
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'), ('dummy', Dummify(target='y')),
+                ('fix_perfect', Remove_100(target='y')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough')],
+         verbose=False)
+2022-07-21 10:10:20,533:INFO:get_config() succesfully completed......................................
+2022-07-21 10:10:20,537:INFO:Fitting Model
+2022-07-21 10:10:20,540:INFO:Scoring test/hold-out set
+2022-07-21 10:10:21,011:INFO:Visual Rendered Successfully
+2022-07-21 10:10:21,124:INFO:plot_model() succesfully completed......................................
+2022-07-21 10:10:24,222:INFO:Initializing predict_model()
+2022-07-21 10:10:24,222:INFO:predict_model(estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, silent='warn',
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0), probability_threshold=None, encoded_labels=False, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None, drift_kwargs=None)
+2022-07-21 10:10:24,222:INFO:Checking exceptions
+2022-07-21 10:10:24,222:INFO:Preloading libraries
+2022-07-21 10:10:24,223:INFO:Preparing display monitor
