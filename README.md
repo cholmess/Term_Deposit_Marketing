@@ -1,74 +1,24 @@
-# Data analysis
-- Document here the project: dMnAVyqwrWS9hdI7
-- Description: Project Description
-- Data Source:
-- Type of analysis:
+Summary of the project
 
-Please document the project the better you can.
+- Data* is given my a company that uses machine learning solutions in the European banking sector. In problems that include fraud detection, sentiment classification and customer intention prediction and classification. One of the customers provided data with the hope to develop a robust machine learning model that increases 
+- They are looking to increase conversion rate in success rate for calls made to customers for any product that our clients offer. Towards this goal we are working on designing an ever evolving machine learning product that offers high success outcomes while offering interpretability for our clients to make informed decisions.
 
-# Startup the project
+Success metrics are the following:
 
-The initial setup.
+- Hit %81 or above accuracy by evaluating with 5-fold cross validation and reporting the average performance score.
+- What makes the customers buy? Tell us which feature we should be focusing more on.
 
-Create virtualenv and install the project:
-```bash
-sudo apt-get install virtualenv python-pip python-dev
-deactivate; virtualenv ~/venv ; source ~/venv/bin/activate ;\
-    pip install pip -U; pip install -r requirements.txt
-```
+*Data is deleted in the repository because of privacy reasons
 
-Unittest test:
-```bash
-make clean install test
-```
+Files used in the repository            
 
-Check for dMnAVyqwrWS9hdI7 in gitlab.com/{group}.
-If your project is not set please add it:
+- jupyter notebook: analysis can be seen in the notebooks folder 
+- original data: has been deleted because of privacy reasons
 
-- Create a new project on `gitlab.com/{group}/dMnAVyqwrWS9hdI7`
-- Then populate it:
+Conclusion 
 
-```bash
-##   e.g. if group is "{group}" and project_name is "dMnAVyqwrWS9hdI7"
-git remote add origin git@github.com:{group}/dMnAVyqwrWS9hdI7.git
-git push -u origin master
-git push -u origin --tags
-```
+- The success threshold is below the actual mark of over 90% for several models tested. However, the metric is not the most appropiate for this kind of problem because of data imbalance.
 
-Functionnal test with a script:
+- A set of features are given to the customer that have higher impact on the output. Customer should change the strategy for increasing the conversion rate
 
-```bash
-cd
-mkdir tmp
-cd tmp
-dMnAVyqwrWS9hdI7-run
-```
-
-# Install
-
-Go to `https://github.com/{group}/dMnAVyqwrWS9hdI7` to see the project, manage issues,
-setup you ssh public key, ...
-
-Create a python3 virtualenv and activate it:
-
-```bash
-sudo apt-get install virtualenv python-pip python-dev
-deactivate; virtualenv -ppython3 ~/venv ; source ~/venv/bin/activate
-```
-
-Clone the project and install it:
-
-```bash
-git clone git@github.com:{group}/dMnAVyqwrWS9hdI7.git
-cd dMnAVyqwrWS9hdI7
-pip install -r requirements.txt
-make clean install test                # install and test
-```
-Functionnal test with a script:
-
-```bash
-cd
-mkdir tmp
-cd tmp
-dMnAVyqwrWS9hdI7-run
-```
+Acknowledgement/References Thanks to Apziva for providing the data
